@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Portfolio</title>
-	
+
 	<!--Favicon-->
 	<link rel="icon" href="asset/img/Favicon.png" type="image/x-icon">
 
@@ -263,12 +263,43 @@
 		<div class="right">
 			<p class="txt" nvs-animation-delay="250" nvs-animation-type="fadeIn">Un projet, une question ou simplement envie d'échanger autour d'un café ? Envoyez-moi un message</p>
 
-			<form class="form d-flex flex-wrap justify-content-sp-btw" action="">
+			
+
+			<form class="form d-flex flex-wrap justify-content-sp-btw" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 				<input id="name" class="little-form" name="name" type="text" placeholder="Nom" required>
 				<input type="email" class="little-form" id="email" placeholder="Email" name="email" required>
 				<textarea type="text" id="message" name="message" placeholder="Votre message"></textarea>
-				<button id="sub" type="button">Envoyer le message</button>
+				<button id="sub" type="submit">Envoyer le message</button>
+				<?php
+					try
+					{
+						$host = 'localhost';
+						$db = 'portfolio';
+						$user = 'root';
+						$password = 'root';
+						$pdo = new PDO('mysql:host=localhost;dbname=portfolio; charset=utf8', $user, $password);
+
+					}
+					catch (Exception $e)
+					{
+						die('Erreur : ' . $e->getMessage());
+					}
+
+					//Envoyer le message
+					$req = $pdo->prepare('INSERT INTO contact (name, email, message, date) VALUES(?, ?, ?, NOW())');
+					$resultat = $req->execute(array($_POST['name'], $_POST['email'], $_POST['message']));
+
+					if (count($_POST)>0) echo "Le message a été envoyé!";
+
+					//on vérifie si le message est bien envoyé 
+//					if ($resultat){
+//						echo "<p>Le message a été envoyé</p>";}
+//					else{
+//						echo "<p>Erreur</p>";}
+
+				?>
 			</form>
+			
 		</div>
 	</section>
 

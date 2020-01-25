@@ -91,7 +91,8 @@ body {
 }
 
 .timeline{
-	margin-right: -40px;
+	margin-right: -35px;
+	padding-right: 3%;
 	height: 60px;
 	width: auto;
 }
@@ -119,7 +120,7 @@ body {
 
 .titre {
 	font-size: 2em;
-	/* haut | droit | bas | gauche */
+	/* haut | droite | bas | gauche */
 	padding: 1.3% 0 1.3% 0;
 }
 

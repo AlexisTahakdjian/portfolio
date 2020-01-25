@@ -80,22 +80,23 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	})
 
-	//on récupère les input de la page contact
-	let name = document.getElementById('name')
-	let email = document.getElementById('email')
-	let message = document.getElementById('message')
-	//le bouton envoyer
-	let button = document.getElementById('sub')
+//	//on récupère les input de la page contact
+//	let name = document.getElementById('name')
+//	let email = document.getElementById('email')
+//	let message = document.getElementById('message')
+//	//le bouton envoyer
+//	let button = document.getElementById('sub')
 
 	//quand on clique sur le boutton 
-	button.addEventListener('click', function () {
-		//on récupére les value
-		let userName = name.value
-		let userEmail = email.value
-		let userMessage = message.value
-
-		//on affiche dans la console
-		console.log("L'utilisateur " + userName + " avec l'email " + userEmail + " a laissé le message : " + userMessage + ".")
-	})
+//	button.addEventListener('click', function () {
+//		event.preventDefault();
+//		//on récupére les value
+//		let userName = name.value
+//		let userEmail = email.value
+//		let userMessage = message.value
+//
+//		//on affiche dans la console
+//		console.log("L'utilisateur " + userName + " avec l'email " + userEmail + " a laissé le message : " + userMessage + ".")
+//	})
 
 })
