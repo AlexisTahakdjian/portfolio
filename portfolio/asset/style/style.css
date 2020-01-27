@@ -91,8 +91,8 @@ body {
 }
 
 .timeline{
-	margin-right: -35px;
-	padding-right: 3%;
+	margin-right: -36px;
+	padding-right: -3%;
 	height: 60px;
 	width: auto;
 }

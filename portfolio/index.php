@@ -265,7 +265,7 @@
 
 			
 
-			<form class="form d-flex flex-wrap justify-content-sp-btw" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+			<form class="form d-flex flex-wrap justify-content-sp-btw" method="post" >
 				<input id="name" class="little-form" name="name" type="text" placeholder="Nom" required>
 				<input type="email" class="little-form" id="email" placeholder="Email" name="email" required>
 				<textarea type="text" id="message" name="message" placeholder="Votre message"></textarea>
@@ -274,7 +274,7 @@
 					try
 					{
 						$host = 'localhost';
-						$db = 'portfolio';
+						$db = 'tahakdjiblog';
 						$user = 'root';
 						$password = 'root';
 						$pdo = new PDO('mysql:host=localhost;dbname=portfolio; charset=utf8', $user, $password);
