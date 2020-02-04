@@ -98,5 +98,19 @@ document.addEventListener('DOMContentLoaded', function () {
 //		//on affiche dans la console
 //		console.log("L'utilisateur " + userName + " avec l'email " + userEmail + " a laissé le message : " + userMessage + ".")
 //	})
-
+	
+	const afficherPlus = document.getElementById("btn");
+	const more = document.getElementById("more")
+	
+	afficherPlus.addEventListener("click", function(){
+		if(more.style.display === "none"){
+			more.style.display = "block";
+			afficherPlus.innerHTML = "Afficher moins"
+		} else{
+			more.style.display = "none";
+			afficherPlus.innerHTML = "Afficher plus"
+			
+		}
+	})
+	
 })

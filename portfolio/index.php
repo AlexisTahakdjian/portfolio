@@ -165,6 +165,100 @@
 			</div>
 		</div>
 	</section>
+	
+	<section id="projet" class="d-flex flex-flow">
+		<div class="left bg-black">
+			<div class="ligne d-flex justify-content-end align-items-start">
+				<h2 class="white font-size-title">MES PROJETS</h2>
+				<img class="timeline" src="asset/img/point.svg" alt="timeline">
+			</div>
+		</div>
+		<div class="right">
+			<div id="projet-un" class="d-flex flex-flow">
+				<div class="w-50 margin-right-10">
+					<a href="">
+						<img class="img-100" src="asset/img/mike-dorner.jpg" alt="">
+					</a>
+				</div>
+				<div class="w-50 margin-left-10">
+					<h2 class="gold font-size-title">Titre</h2>
+					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
+					<img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_red.svg" alt="">
+				</div>
+			</div>
+			<div id="projet-deux" class="d-flex flex-flow margin-top-30">
+				<div class="w-50 margin-right-10">
+					<a href="">
+						<img class="img-100" src="asset/img/mink-mingle.jpg" alt="">
+					</a>
+				</div>
+				<div class="w-50 margin-left-10">
+					<h2 class="gold font-size-title">Titre</h2>
+					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
+					<img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_green.svg" alt="">
+				</div>
+			</div>
+			
+			<div id="projet-trois" class="d-flex flex-flow margin-top-30">
+				<div class="w-50 margin-right-10">
+					<a href="">
+						<img class="img-100" src="asset/img/nikolai-chernichenko.jpg" alt="">
+					</a>
+				</div>
+				<div class="w-50 margin-left-10">
+					<h2 class="gold font-size-title">Titre</h2>
+					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
+					<img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_orange.svg" alt="">
+				</div>
+			</div>
+			
+			<div id="more">
+				<div id="projet-quatre" class="d-flex flex-flow margin-top-30">
+				<div class="w-50 margin-right-10">
+					<a href="">
+						<img class="img-100" src="asset/img/nikolai-chernichenko.jpg" alt="">
+					</a>
+				</div>
+				<div class="w-50 margin-left-10">
+					<h2 class="gold font-size-title">Titre</h2>
+					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
+					<img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_orange.svg" alt="">
+				</div>
+			</div>
+			
+			<div id="projet-cinq" class="d-flex flex-flow margin-top-30">
+				<div class="w-50 margin-right-10">
+					<a href="">
+						<img class="img-100" src="asset/img/mink-mingle.jpg" alt="">
+					</a>
+				</div>
+				<div class="w-50 margin-left-10">
+					<h2 class="gold font-size-title">Titre</h2>
+					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
+					<img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_green.svg" alt="">
+				</div>
+			</div>
+			
+			<div id="projet-six" class="d-flex flex-flow">
+				<div class="w-50 margin-right-10">
+					<a href="">
+						<img class="img-100" src="asset/img/mike-dorner.jpg" alt="">
+					</a>
+				</div>
+				<div class="w-50 margin-left-10">
+					<h2 class="gold font-size-title">Titre</h2>
+					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
+					<img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_red.svg" alt="">
+				</div>
+			</div>
+			
+			</div>
+			
+			<button id="btn">Afficher plus</button>
+			
+		</div>
+	</section>
+	
 	<section id="competence" class="d-flex flex-flow">
 		<div class="left bg-black">
 			<div class="ligne d-flex justify-content-end align-items-start">
@@ -287,7 +381,7 @@
 
 					//Envoyer le message
 					$req = $pdo->prepare('INSERT INTO contact (name, email, message, date) VALUES(?, ?, ?, NOW())');
-					$resultat = $req->execute(array($_POST['name'], $_POST['email'], $_POST['message']));
+					$req->execute(array(htmlspecialchars($_POST['name']), htmlspecialchars($_POST['email']), htmlspecialchars($_POST['message'])));
 
 					if (count($_POST)>0) echo "Le message a été envoyé!";
 
