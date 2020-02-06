@@ -4,6 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Portfolio</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 
 	<!--Favicon-->
 	<link rel="icon" href="asset/img/Favicon.png" type="image/x-icon">
@@ -165,6 +167,100 @@
 			</div>
 		</div>
 	</section>
+	
+	<section id="projet" class="d-flex flex-flow">
+		<div class="left bg-black">
+			<div class="ligne d-flex justify-content-end align-items-start">
+				<h2 class="white font-size-title">MES PROJETS</h2>
+				<img class="timeline" src="asset/img/point.svg" alt="timeline">
+			</div>
+		</div>
+		<div class="right">
+			<div id="projet-un" class="d-flex flex-flow">
+				<div class="w-50 margin-right-10">
+					<a href="">
+						<img class="img-100" src="asset/img/mike-dorner.jpg" alt="">
+					</a>
+				</div>
+				<div class="w-50 margin-left-10">
+					<h2 class="gold font-size-title">Titre</h2>
+					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
+					<img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_red.svg" alt="">
+				</div>
+			</div>
+			<div id="projet-deux" class="d-flex flex-flow margin-top-30">
+				<div class="w-50 margin-right-10">
+					<a href="">
+						<img class="img-100" src="asset/img/mink-mingle.jpg" alt="">
+					</a>
+				</div>
+				<div class="w-50 margin-left-10">
+					<h2 class="gold font-size-title">Titre</h2>
+					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
+					<img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_green.svg" alt="">
+				</div>
+			</div>
+			
+			<div id="projet-trois" class="d-flex flex-flow margin-top-30">
+				<div class="w-50 margin-right-10">
+					<a href="">
+						<img class="img-100" src="asset/img/nikolai-chernichenko.jpg" alt="">
+					</a>
+				</div>
+				<div class="w-50 margin-left-10">
+					<h2 class="gold font-size-title">Titre</h2>
+					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
+					<img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_orange.svg" alt="">
+				</div>
+			</div>
+			
+			<div id="more">
+				<div id="projet-quatre" class="d-flex flex-flow margin-top-30">
+				<div class="w-50 margin-right-10">
+					<a href="">
+						<img class="img-100" src="asset/img/nikolai-chernichenko.jpg" alt="">
+					</a>
+				</div>
+				<div class="w-50 margin-left-10">
+					<h2 class="gold font-size-title">Titre</h2>
+					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
+					<img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_orange.svg" alt="">
+				</div>
+			</div>
+			
+			<div id="projet-cinq" class="d-flex flex-flow margin-top-30">
+				<div class="w-50 margin-right-10">
+					<a href="">
+						<img class="img-100" src="asset/img/mink-mingle.jpg" alt="">
+					</a>
+				</div>
+				<div class="w-50 margin-left-10">
+					<h2 class="gold font-size-title">Titre</h2>
+					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
+					<img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_green.svg" alt="">
+				</div>
+			</div>
+			
+			<div id="projet-six" class="d-flex flex-flow">
+				<div class="w-50 margin-right-10">
+					<a href="">
+						<img class="img-100" src="asset/img/mike-dorner.jpg" alt="">
+					</a>
+				</div>
+				<div class="w-50 margin-left-10">
+					<h2 class="gold font-size-title">Titre</h2>
+					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
+					<img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_red.svg" alt="">
+				</div>
+			</div>
+			
+			</div>
+			
+			<button id="btn">Afficher plus</button>
+			
+		</div>
+	</section>
+	
 	<section id="competence" class="d-flex flex-flow">
 		<div class="left bg-black">
 			<div class="ligne d-flex justify-content-end align-items-start">
@@ -265,37 +361,30 @@
 
 			
 
-			<form class="form d-flex flex-wrap justify-content-sp-btw" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+			<form class="form d-flex flex-wrap justify-content-sp-btw" method="post" action="index.php" >
 				<input id="name" class="little-form" name="name" type="text" placeholder="Nom" required>
 				<input type="email" class="little-form" id="email" placeholder="Email" name="email" required>
 				<textarea type="text" id="message" name="message" placeholder="Votre message"></textarea>
 				<button id="sub" type="submit">Envoyer le message</button>
 				<?php
-					try
-					{
-						$host = 'localhost';
-						$db = 'portfolio';
-						$user = 'root';
-						$password = 'root';
-						$pdo = new PDO('mysql:host=localhost;dbname=portfolio; charset=utf8', $user, $password);
+                    require './asset/classes/Autoloader.class.php';
+                    Autoloader::register();
 
-					}
-					catch (Exception $e)
-					{
-						die('Erreur : ' . $e->getMessage());
+                //Envoyer le message
+				    require './asset/includes/addMessage.include.php';
+
+					if (isset($_POST['name'])){
+
+					addMessage();
+		
 					}
 
-					//Envoyer le message
-					$req = $pdo->prepare('INSERT INTO contact (name, email, message, date) VALUES(?, ?, ?, NOW())');
-					$resultat = $req->execute(array($_POST['name'], $_POST['email'], $_POST['message']));
+					if (count($_POST)>0) {
+						
+						echo "<p class='txt'>Le message a été envoyé!</p>";
+					}
 
-					if (count($_POST)>0) echo "Le message a été envoyé!";
 
-					//on vérifie si le message est bien envoyé 
-//					if ($resultat){
-//						echo "<p>Le message a été envoyé</p>";}
-//					else{
-//						echo "<p>Erreur</p>";}
 
 				?>
 			</form>

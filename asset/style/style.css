@@ -46,6 +46,10 @@ body {
 	flex-direction: row;
 }
 
+.column{
+	flex-direction: column;
+}
+
 .bg-red {
 	background-color: red;
 }
@@ -82,6 +86,48 @@ body {
 	width: 40vw;
 }
 
+.w-15{
+	width: 15%
+}
+
+.w-25{
+	width: 25%;
+}
+
+.w-50{
+	width: 50%;
+}
+
+.w-100{
+	width: 100%;
+}
+
+.margin-left-10{
+	margin-left: 10px;
+}
+
+.margin-right-10{
+	margin-right: 10px;
+}
+
+.margin-top-30{
+	margin-top: 30px;
+}
+
+.img-100{
+	width: 100%;
+	height: auto;
+}
+
+.img-50{
+	width: 50%;
+	height: auto;
+}
+
+.h-auto{
+	height: auto;
+}
+
 .ligne {
 	height: 100%;
 	padding: 35px 3% 35px 3%;
@@ -91,8 +137,8 @@ body {
 }
 
 .timeline{
-	margin-right: -35px;
-	padding-right: 3%;
+	margin-right: -36px;
+	padding-right: -3%;
 	height: 60px;
 	width: auto;
 }
@@ -115,8 +161,6 @@ body {
 .txt {
 	list-style: none;
 }
-
-
 
 .titre {
 	font-size: 2em;
@@ -223,12 +267,19 @@ button {
 	height: auto;
 }
 
+#traffic-light{
+	margin-left: -7px;	
+}
+
+#more {display: none;}
+
 #message {
 	width: 100%;
 	height: 200px;
 	margin-top: 10px;
 	text-align: start right;
 }
+
 
 @media (max-width: 1024px) {
 	.left {
@@ -259,6 +310,10 @@ button {
 	
 	.align-items-start{
 		align-items: center;
+	}
+	
+	.w-50{
+		width: 100%
 	}
 	
 	.titre {
