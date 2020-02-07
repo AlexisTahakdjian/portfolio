@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+main{
+    background-color: white;
+    margin: 150px;
+    padding: 30px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    /* haut | horizontal | bas */
+    margin: 0 0 20px;
+}
+
+form{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input{
+    border: 2px solid #ffbf31;
+    width: 70%;
+    height: 20px;
+    padding: 5px;
+}
+
+button{
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 5px;
+    background-color: #ffbf31;
+    font-size: 1em;
+}
+
+select{
+    margin-top: 10px;
+}
+
+.boutton{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
