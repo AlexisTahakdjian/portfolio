@@ -185,6 +185,7 @@
 				<div class="w-50 margin-left-10">
 					<h2 class="gold font-size-title">Titre</h2>
 					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
+                    <h4 class="gold font-size-title">Client</h4>
 					<img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_red.svg" alt="">
 				</div>
 			</div>
@@ -197,6 +198,7 @@
 				<div class="w-50 margin-left-10">
 					<h2 class="gold font-size-title">Titre</h2>
 					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
+                    <h3 class="gold font-size-title">Client</h3>
 					<img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_green.svg" alt="">
 				</div>
 			</div>
@@ -210,6 +212,7 @@
 				<div class="w-50 margin-left-10">
 					<h2 class="gold font-size-title">Titre</h2>
 					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
+                    <h3 class="gold font-size-title">Client</h3>
 					<img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_orange.svg" alt="">
 				</div>
 			</div>
@@ -224,7 +227,8 @@
 				<div class="w-50 margin-left-10">
 					<h2 class="gold font-size-title">Titre</h2>
 					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
-					<img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_orange.svg" alt="">
+                    <h3 class="gold font-size-title">Client</h3>
+                    <img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_orange.svg" alt="">
 				</div>
 			</div>
 			
@@ -237,7 +241,8 @@
 				<div class="w-50 margin-left-10">
 					<h2 class="gold font-size-title">Titre</h2>
 					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
-					<img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_green.svg" alt="">
+                    <h3 class="gold font-size-title">Client</h3>
+                    <img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_green.svg" alt="">
 				</div>
 			</div>
 			
@@ -250,7 +255,8 @@
 				<div class="w-50 margin-left-10">
 					<h2 class="gold font-size-title">Titre</h2>
 					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
-					<img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_red.svg" alt="">
+                    <h3 class="gold font-size-title">Client</h3>
+                    <img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_red.svg" alt="">
 				</div>
 			</div>
 			
