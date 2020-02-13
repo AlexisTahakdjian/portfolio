@@ -8,7 +8,7 @@
 		private $password = 'root';
 		
 		public function connect(){
-			return new PDO('mysql:host='.$this->host.'; dbname='.$this->db.'; charset=utf8', $this->user, $this->password);
+			return new PDO('mysql:host='.$this->host.'; dbname='.$this->db.'; charset=utf8', $this->user, $this->password, array(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION));
 		}
 		
 	}

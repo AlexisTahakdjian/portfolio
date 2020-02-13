@@ -1,22 +1,22 @@
 document.addEventListener('DOMContentLoaded', function () {
 	console.log('load')
-	
-	
+
+
 	const arrow = document.getElementById('arrow')
 	const formation = document.getElementById('formation')
-	
+
 	arrow.addEventListener('click', function(event){
 		event.preventDefault();
 		console.log('click')
 		let formationY = formation.offsetTop;
 		console.log(formationY)
-		
+
 		window.scroll(0, formationY)
 	})
-	
 
-	
-	
+
+
+
 	//On stock les compétences et les %
 	let competence = [{
 			name: 'html',
@@ -46,31 +46,31 @@ document.addEventListener('DOMContentLoaded', function () {
 			name: 'indesign',
 			pourcentage: 90
 		}];
-	
+
 	//pour récupérer la longueur du JSON
 	let obj = Object.keys(competence).length
-	
+
 	//function pour définir la postion du scroll
 	function isView(){
 		let height = window.scrollY;
 		if(height < 2647){
-			
+
 			return false
 		}else if (height >= 2647){
-			
+
 			return true
 		}
 	}
-	
-	
+
+
 	//addEventListener pour le scroll
 	document.addEventListener('scroll', function(event){
-		
-		//Quand le scroll est au bon endroit 
+
+		//Quand le scroll est au bon endroit
 		if (isView()){
-			//on vérifie tout le json 
+			//on vérifie tout le json
 			for(let i = 0; i < obj; i++){
-				
+
 				//change le width
 				let elem = document.getElementById(competence[i].name);
 				elem.style.width = competence[i].pourcentage.toString() + '%'
@@ -80,37 +80,83 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	})
 
-//	//on récupère les input de la page contact
-//	let name = document.getElementById('name')
-//	let email = document.getElementById('email')
-//	let message = document.getElementById('message')
-//	//le bouton envoyer
-//	let button = document.getElementById('sub')
 
-	//quand on clique sur le boutton 
-//	button.addEventListener('click', function () {
-//		event.preventDefault();
-//		//on récupére les value
-//		let userName = name.value
-//		let userEmail = email.value
-//		let userMessage = message.value
-//
-//		//on affiche dans la console
-//		console.log("L'utilisateur " + userName + " avec l'email " + userEmail + " a laissé le message : " + userMessage + ".")
-//	})
-	
-	const afficherPlus = document.getElementById("btn");
-	const more = document.getElementById("more")
-	
-	afficherPlus.addEventListener("click", function(){
-		if(more.style.display === "none"){
-			more.style.display = "block";
-			afficherPlus.innerHTML = "Afficher moins"
-		} else{
-			more.style.display = "none";
-			afficherPlus.innerHTML = "Afficher plus"
-			
-		}
-	})
-	
+
+	// const afficherPlus = document.getElementById("btn");
+	// const more = document.getElementById("more")
+	//
+	// afficherPlus.addEventListener("click", function(){
+	// 	if(more.style.display === "none"){
+	// 		more.style.display = "block";
+	// 		afficherPlus.innerHTML = "Afficher moins"
+	// 	} else{
+	// 		more.style.display = "none";
+	// 		afficherPlus.innerHTML = "Afficher plus"
+	//
+	// 	}
+	// })
+
+
+
+	const projects = document.getElementById('projects');
+	let compteur = 3;
+
+	Object.keys(data).map(function(key, index) {
+
+		const projet = document.createElement('div');
+		projet.classList.add("d-flex");
+		projet.classList.add("flex-flow");
+		projects.appendChild(projet);
+
+		const partUn = document.createElement('div');
+		partUn.classList.add("w-50");
+		partUn.classList.add("margin-right-10");
+		projet.appendChild(partUn);
+
+		const lien = document.createElement('a')
+		lien.href = data[key].url;
+		lien.target = "_blank";
+		partUn.appendChild(lien);
+
+		const imageProjet = document.createElement('img');
+		imageProjet.src = "./asset/img/" + data[key].photo + ".jpg";
+		imageProjet.classList.add('img-100');
+		lien.appendChild(imageProjet);
+
+		const parDeux = document.createElement('div');
+		parDeux.classList.add("w-50");
+		parDeux.classList.add("margin-left-10");
+		projet.appendChild(parDeux);
+
+
+		const titreProjet = document.createElement('h2');
+		const titre = document.createTextNode(data[key].titre);
+		titreProjet.appendChild(titre);
+		parDeux.appendChild(titreProjet)
+		titreProjet.classList.add("gold");
+		titreProjet.classList.add("font-size-title");
+
+		const descriptionProjet = document.createElement('p');
+		const textDescription = document.createTextNode(data[key].Description);
+		descriptionProjet.appendChild(textDescription);
+		descriptionProjet.classList.add("txt");
+		parDeux.appendChild(descriptionProjet);
+
+		const clientProjet = document.createElement("h4");
+		const nomClient = document.createTextNode(data[key].nom);
+		clientProjet.appendChild(nomClient);
+		clientProjet.classList.add("gold");
+		clientProjet.classList.add("font-size-title");
+		parDeux.appendChild(clientProjet);
+
+		const trafficLight = document.createElement('img');
+		trafficLight.src = "asset/img/traffic-light/traffic_" + data[key].traffic +".svg";
+		trafficLight.alt = data[key].traffic;
+		trafficLight.classList.add("w-15");
+		parDeux.appendChild(trafficLight);
+
+	});
+
+
+
 })

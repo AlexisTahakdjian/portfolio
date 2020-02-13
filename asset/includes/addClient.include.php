@@ -9,15 +9,11 @@
             die('Erreur : ' . $e->getMessage());
         }
 
-        $titre = $_POST['titre'];
-        $description = $_POST['message'];
-        $url = $_POST['url'];
-        $photo = $_POST['photo'];
-        $traffic = $_POST['traffic'];
-        $client = $_POST['client'];
+        $nom = $_POST['nom'];
+        $descriptionClient = $_POST['description'];
 
-        $ajout = $reponse->prepare('INSERT INTO add_project (`titre`, `Description`, `url`, `photo`, `traffic`, `client` ) VALUES (?, ?, ?, ?, ?, ?)');
-        $ajout->execute(array($titre, $description, $url, $photo, $traffic, $client));
+        $ajout = $reponse->prepare('INSERT INTO client (`nom`, `description`) VALUES (?, ?)');
+        $ajout->execute(array($nom, $descriptionClient));
 
     }
 

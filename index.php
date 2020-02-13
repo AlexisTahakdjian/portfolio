@@ -53,7 +53,7 @@
 	<section id="formation" class="d-flex flex-flow">
 		<div class="left bg-black">
 			<div class="ligne d-flex justify-content-end align-items-start">
-				<h2 class="white font-size-title">MES FORMATIONS</h2>
+				<h2 class="white font-size-title margin-top-10">MES FORMATIONS</h2>
 				<img class="timeline" src="asset/img/point.svg" alt="timeline">
 			</div>
 		</div>
@@ -90,7 +90,7 @@
 			</div>
 			<div class="xp">
 				<p class="txt">2015 | Institut de l’Internet et du Multimédia | 5 ans</p>
-				<h2 class="titre gold">Mastère Manager de la communication numérique. Option Communication Visuelle.</h2>
+				<h2 class="titre gold">Master Manager de la communication numérique. Option Communication Visuelle.</h2>
 				<p class="txt">En plus de ma formation au design et à la direction artistique, ce master m’a apporté de bonnes connaissances en webmarketing et ebusiness, me permettant d’adopter un profil multidisciplinaire.</p>
 			</div>
 		</div>
@@ -98,7 +98,7 @@
 	<section id="experience" class="d-flex flex-flow">
 		<div class="left bg-black">
 			<div class="ligne d-flex justify-content-end">
-				<h2 class="white font-size-title">MES EXPERIENCES</h2>
+				<h2 class="white font-size-title margin-top-10">MES EXPERIENCES</h2>
 				<img class="timeline" src="asset/img/point.svg" alt="timeline">
 			</div>
 		</div>
@@ -147,7 +147,7 @@
 	<section id="xp-international" class="d-flex flex-flow">
 		<div class="left bg-black">
 			<div class="ligne d-flex justify-content-end align-items-start">
-				<h2 class="white font-size-title">MON EXPERIENCE<br>INTERNATIONALE</h2>
+				<h2 class="white font-size-title margin-top-10">MON EXPERIENCE<br>INTERNATIONALE</h2>
 				<img class="timeline" src="asset/img/point.svg" alt="timeline">
 			</div>
 		</div>
@@ -171,96 +171,51 @@
 	<section id="projet" class="d-flex flex-flow">
 		<div class="left bg-black">
 			<div class="ligne d-flex justify-content-end align-items-start">
-				<h2 class="white font-size-title">MES PROJETS</h2>
+				<h2 class="white font-size-title margin-top-10">MES PROJETS</h2>
 				<img class="timeline" src="asset/img/point.svg" alt="timeline">
 			</div>
 		</div>
-		<div class="right">
-			<div id="projet-un" class="d-flex flex-flow">
-				<div class="w-50 margin-right-10">
-					<a href="">
-						<img class="img-100" src="asset/img/mike-dorner.jpg" alt="">
-					</a>
-				</div>
-				<div class="w-50 margin-left-10">
-					<h2 class="gold font-size-title">Titre</h2>
-					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
-                    <h4 class="gold font-size-title">Client</h4>
-					<img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_red.svg" alt="">
-				</div>
-			</div>
-			<div id="projet-deux" class="d-flex flex-flow margin-top-30">
-				<div class="w-50 margin-right-10">
-					<a href="">
-						<img class="img-100" src="asset/img/mink-mingle.jpg" alt="">
-					</a>
-				</div>
-				<div class="w-50 margin-left-10">
-					<h2 class="gold font-size-title">Titre</h2>
-					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
-                    <h3 class="gold font-size-title">Client</h3>
-					<img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_green.svg" alt="">
-				</div>
-			</div>
-			
-			<div id="projet-trois" class="d-flex flex-flow margin-top-30">
-				<div class="w-50 margin-right-10">
-					<a href="">
-						<img class="img-100" src="asset/img/nikolai-chernichenko.jpg" alt="">
-					</a>
-				</div>
-				<div class="w-50 margin-left-10">
-					<h2 class="gold font-size-title">Titre</h2>
-					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
-                    <h3 class="gold font-size-title">Client</h3>
-					<img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_orange.svg" alt="">
-				</div>
-			</div>
-			
-			<div id="more">
-				<div id="projet-quatre" class="d-flex flex-flow margin-top-30">
-				<div class="w-50 margin-right-10">
-					<a href="">
-						<img class="img-100" src="asset/img/nikolai-chernichenko.jpg" alt="">
-					</a>
-				</div>
-				<div class="w-50 margin-left-10">
-					<h2 class="gold font-size-title">Titre</h2>
-					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
-                    <h3 class="gold font-size-title">Client</h3>
-                    <img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_orange.svg" alt="">
-				</div>
-			</div>
-			
-			<div id="projet-cinq" class="d-flex flex-flow margin-top-30">
-				<div class="w-50 margin-right-10">
-					<a href="">
-						<img class="img-100" src="asset/img/mink-mingle.jpg" alt="">
-					</a>
-				</div>
-				<div class="w-50 margin-left-10">
-					<h2 class="gold font-size-title">Titre</h2>
-					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
-                    <h3 class="gold font-size-title">Client</h3>
-                    <img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_green.svg" alt="">
-				</div>
-			</div>
-			
-			<div id="projet-six" class="d-flex flex-flow">
-				<div class="w-50 margin-right-10">
-					<a href="">
-						<img class="img-100" src="asset/img/mike-dorner.jpg" alt="">
-					</a>
-				</div>
-				<div class="w-50 margin-left-10">
-					<h2 class="gold font-size-title">Titre</h2>
-					<p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi vero labore dolores, natus nostrum quis quas esse nemo fugit vitae mollitia neque at veniam et dicta sed ut, accusamus.</p>
-                    <h3 class="gold font-size-title">Client</h3>
-                    <img id="traffic-light" class="w-15" src="asset/img/traffic-light/traffic_red.svg" alt="">
-				</div>
-			</div>
-			
-			</div>
+		<div id='projects' class="right">
+            <?php
+            require './asset/classes/Autoloader.class.php';
+            Autoloader::register();
+
+            try {
+                $bdd = new connectDb();
+                $bddReponse = $bdd->connect();
+            } catch(Exception $e) {
+                die('Erreur : ' . $e->getMessage());
+            }
+
+            $ask = $bddReponse->query('SELECT * FROM add_project INNER JOIN client ON add_project.client = client.id');
+            $limite = 3;
+            $reponse = $ask->fetchAll(PDO::FETCH_OBJ);
+
+            $test = json_encode($reponse);
+
+                ?>
+
+            <script>
+                var data = <?php echo $test; ?>;
+                console.log("data",data);
+            </script>
+
+               /* <div  class="d-flex flex-flow">
+                    <div class="w-50 margin-right-10">
+                        <a id='lien' href="" target="_blank">
+                            <img id='image-projet' class="img-100" src="./asset/img/" alt="">
+                        </a>
+                    </div>
+                    <div id='partDeux' class="w-50 margin-left-10">
+                        <h2 id='titre-projet' class="gold font-size-title"></h2>
+                        <p id='description' class="txt"></p>
+                        <h4 id='client-projet' class="gold font-size-title"></h4>
+                        <img id="traffic-light" class="w-15"
+                             src=""
+                             alt="">
+                    </div>
+                </div> */
+
 			
 			<button id="btn">Afficher plus</button>
 			
@@ -270,7 +225,7 @@
 	<section id="competence" class="d-flex flex-flow">
 		<div class="left bg-black">
 			<div class="ligne d-flex justify-content-end align-items-start">
-				<h2 class="white font-size-title">MES COMPÉTENCES</h2>
+				<h2 class="white font-size-title margin-top-10">MES COMPÉTENCES</h2>
 				<img class="timeline" src="asset/img/point.svg" alt="timeline">
 			</div>
 		</div>
@@ -346,7 +301,7 @@
 		<div class="left bg-black">
 			<div class="ligne d-flex justify-content-end align-items-start">
 				<div>
-					<h2 class="white font-size-title">CONTACTEZ-MOI</h2>
+					<h2 class="white font-size-title margin-top-10">CONTACTEZ-MOI</h2>
 
 					<div class="contact">
 						<h3 class="white font-size-contact titre-contact">EMAIL</h3>
@@ -373,10 +328,7 @@
 				<textarea type="text" id="message" name="message" placeholder="Votre message"></textarea>
 				<button id="sub" type="submit">Envoyer le message</button>
 				<?php
-                    require './asset/classes/Autoloader.class.php';
-                    Autoloader::register();
-
-                //Envoyer le message
+                    //Envoyer le message
 				    require './asset/includes/addMessage.include.php';
 
 					if (isset($_POST['name'])){
