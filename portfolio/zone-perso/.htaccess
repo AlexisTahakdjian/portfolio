@@ -1,0 +1,4 @@
+AuthName "Page d'administration protégée"
+AuthType Basic
+AuthUserFile "/home/tahakdji/www/zone-perso/.htpasswd"
+Require valid-user

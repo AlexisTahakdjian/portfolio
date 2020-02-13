@@ -7,15 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ajout de nouveau projet</title>
     <!--CSS-->
-    <link rel="stylesheet" href="asset/style/admin.css">
+    <link rel="stylesheet" href="../asset/style/admin.css">
     <!--Favicon-->
-    <link rel="icon" href="asset/img/Favicon.png" type="image/x-icon">
+    <link rel="icon" href="../asset/img/Favicon.png" type="image/x-icon">
 
 </head>
 <body>
     <main>
         <?php
-        require './asset/classes/Autoloader.class.php';
+        require '../asset/classes/Autoloader.class.php';
         Autoloader::register();
         ?>
         <h2>Ajout d'un nouveau projet</h2>
@@ -51,11 +51,11 @@
         <?php
 
         //Enregistrer le client
-        require './asset/includes/addClient.include.php';
+        require '../asset/includes/addProjet.include.php';
 
         if (isset($_POST['titre'])){
 
-            addClient();
+            addProjet();
 
         }
 
