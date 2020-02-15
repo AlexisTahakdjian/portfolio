@@ -197,28 +197,11 @@
 
             <script>
                 var data = <?php echo $test; ?>;
-                console.log("data",data);
+
             </script>
 
-               /* <div  class="d-flex flex-flow">
-                    <div class="w-50 margin-right-10">
-                        <a id='lien' href="" target="_blank">
-                            <img id='image-projet' class="img-100" src="./asset/img/" alt="">
-                        </a>
-                    </div>
-                    <div id='partDeux' class="w-50 margin-left-10">
-                        <h2 id='titre-projet' class="gold font-size-title"></h2>
-                        <p id='description' class="txt"></p>
-                        <h4 id='client-projet' class="gold font-size-title"></h4>
-                        <img id="traffic-light" class="w-15"
-                             src=""
-                             alt="">
-                    </div>
-                </div> */
 
-			
-			<button id="btn">Afficher plus</button>
-			
+           <!--<button id="btn">Afficher plus</button>-->
 		</div>
 	</section>
 	
