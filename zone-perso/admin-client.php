@@ -26,6 +26,7 @@
             <button type="submit">Ajouter un client</button><button type="reset">Reset</button>
         </div>
     </form>
+    <a href="./admin-projet.php">Ajouter un projet</a>
     <?php
 
     //Enregistrer le client

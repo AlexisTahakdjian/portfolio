@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-	console.log('load')
+
 
 
 	const arrow = document.getElementById('arrow')
@@ -32,7 +32,15 @@ document.addEventListener('DOMContentLoaded', function () {
 		},
 		{
 			name: 'react',
-			pourcentage: 30
+			pourcentage: 65
+		},
+		{
+			name: 'node',
+			pourcentage: 45
+		},
+		{
+			name: 'mysql',
+			pourcentage: 35
 		},
 		{
 			name: 'photoshop',
@@ -74,36 +82,19 @@ document.addEventListener('DOMContentLoaded', function () {
 				//change le width
 				let elem = document.getElementById(competence[i].name);
 				elem.style.width = competence[i].pourcentage.toString() + '%'
-			}
+			};
 		}else{
 			return false
 		}
 	})
-
-
-
-	// const afficherPlus = document.getElementById("btn");
-	// const more = document.getElementById("more")
-	//
-	// afficherPlus.addEventListener("click", function(){
-	// 	if(more.style.display === "none"){
-	// 		more.style.display = "block";
-	// 		afficherPlus.innerHTML = "Afficher moins"
-	// 	} else{
-	// 		more.style.display = "none";
-	// 		afficherPlus.innerHTML = "Afficher plus"
-	//
-	// 	}
-	// })
-
-
-
+	
 	const projects = document.getElementById('projects');
 	let compteur = 3;
 
-	Object.keys(data).map(function(key, index) {
+	function  afficherProjet(key) {
 
 		const projet = document.createElement('div');
+		projet.id = data[key].idadd;
 		projet.classList.add("d-flex");
 		projet.classList.add("flex-flow");
 		projects.appendChild(projet);
@@ -127,7 +118,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		parDeux.classList.add("w-50");
 		parDeux.classList.add("margin-left-10");
 		projet.appendChild(parDeux);
-
 
 		const titreProjet = document.createElement('h2');
 		const titre = document.createTextNode(data[key].titre);
@@ -155,7 +145,53 @@ document.addEventListener('DOMContentLoaded', function () {
 		trafficLight.classList.add("w-15");
 		parDeux.appendChild(trafficLight);
 
+	};
+
+	let mesProjets = Object.keys(data).length;
+	console.log("mesProjets", mesProjets);
+
+	Object.keys(data).map(function(key, index) {
+		if (index < compteur) {
+			afficherProjet(key);
+		}
 	});
+	
+	function removeElement(elementId) {
+		let element = document.getElementById(elementId);
+		element.parentNode.removeChild(element);
+	}
+
+
+	const afficherPlus = document.createElement('button');
+	afficherPlus.innerHTML = "Afficher plus";
+
+	projects.appendChild(afficherPlus);
+
+	afficherPlus.addEventListener("click", function(){
+		if(compteur === 3){
+
+			Object.keys(data).map(function(key, index) {
+				if (index >= compteur) {
+					afficherProjet(key);
+				}
+			});
+			compteur = mesProjets;
+			afficherPlus.style.marginBottom = '15px';
+			afficherPlus.innerHTML = "Afficher moins"
+		} else{
+			compteur = 3;
+			Object.keys(data).map(function(key, index) {
+				let id = data[key].idadd;
+				if (index >= compteur ){
+					removeElement(id)
+				}
+			})
+
+			afficherPlus.innerHTML = "Afficher plus"
+
+		}
+	})
+
 
 
 

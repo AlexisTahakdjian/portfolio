@@ -1,4 +1,4 @@
-<!doctype html>
+    <!doctype html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -48,6 +48,7 @@
                 <button type="submit">Ajouter un projet</button><button type="reset">Reset</button>
             </div>
         </form>
+        <a href="./admin-client.php">Ajouter un client</a>
         <?php
 
         //Enregistrer le client

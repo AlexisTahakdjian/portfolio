@@ -103,6 +103,17 @@
 			</div>
 		</div>
 		<div class="right">
+            <div class="xp">
+                <h2 class="titre gold">Développeur Front-End React.JS</h2>
+                <p class="txt">Awaree - Mars 2020</p>
+                <ul>
+                    <li class="txt">- Analyse du brief,</li>
+                    <li class="txt">- Veille technologique,</li>
+                    <li class="txt">- Mise en place d'un environnement de développement local en React.JS, Gatsby, Axios et JwtToken,</li>
+                    <li class="txt">- Intégration, création de component et conception des requêtes,</li>
+                    <li class="txt">- Relation client.</li>
+                </ul>
+            </div>
 			<div class="xp">
 				<h2 class="titre gold">Assistant e-Commerce</h2>
 				<p class="txt">Sud Express - Juin 2016 à Décembre 2016</p>
@@ -153,7 +164,7 @@
 		</div>
 		<div class="right">
 			<div class="xp">
-				<h2 class="titre gold">Éxpérience internationale en Australie</h2>
+				<h2 class="titre gold">Expérience internationale en Australie</h2>
 				<p class="txt">Août 2017 à Septembre 2018</p>
 				<ul>
 					<li class="txt">- Apprentissage de l’anglais au travers de divers métiers,</li>
@@ -167,60 +178,8 @@
 			</div>
 		</div>
 	</section>
-	
-	<section id="projet" class="d-flex flex-flow">
-		<div class="left bg-black">
-			<div class="ligne d-flex justify-content-end align-items-start">
-				<h2 class="white font-size-title margin-top-10">MES PROJETS</h2>
-				<img class="timeline" src="asset/img/point.svg" alt="timeline">
-			</div>
-		</div>
-		<div id='projects' class="right">
-            <?php
-            require './asset/classes/Autoloader.class.php';
-            Autoloader::register();
 
-            try {
-                $bdd = new connectDb();
-                $bddReponse = $bdd->connect();
-            } catch(Exception $e) {
-                die('Erreur : ' . $e->getMessage());
-            }
 
-            $ask = $bddReponse->query('SELECT * FROM add_project INNER JOIN client ON add_project.client = client.id');
-            $limite = 3;
-            $reponse = $ask->fetchAll(PDO::FETCH_OBJ);
-
-            $test = json_encode($reponse);
-
-                ?>
-
-            <script>
-                var data = <?php echo $test; ?>;
-                console.log("data",data);
-            </script>
-
-               /* <div  class="d-flex flex-flow">
-                    <div class="w-50 margin-right-10">
-                        <a id='lien' href="" target="_blank">
-                            <img id='image-projet' class="img-100" src="./asset/img/" alt="">
-                        </a>
-                    </div>
-                    <div id='partDeux' class="w-50 margin-left-10">
-                        <h2 id='titre-projet' class="gold font-size-title"></h2>
-                        <p id='description' class="txt"></p>
-                        <h4 id='client-projet' class="gold font-size-title"></h4>
-                        <img id="traffic-light" class="w-15"
-                             src=""
-                             alt="">
-                    </div>
-                </div> */
-
-			
-			<button id="btn">Afficher plus</button>
-			
-		</div>
-	</section>
 	
 	<section id="competence" class="d-flex flex-flow">
 		<div class="left bg-black">
@@ -264,6 +223,22 @@
 						<div id="react" class="mybar"></div>
 					</div>
 				</div>
+
+                <div class="progress d-flex flex-wrap align-items-center">
+                    <img class="logo" src="asset/img/1024px-Node.js_logo.png" alt="logo Node JS">
+                    <p class="txt">Node.JS</p>
+                    <div class="bar">
+                        <div id="node" class="mybar"></div>
+                    </div>
+                </div>
+
+                <div class="progress d-flex flex-wrap align-items-center">
+                    <img class="logo" src="asset/img/mysql.png" alt="logo MySQL SQL">
+                    <p class="txt">MySQL</p>
+                    <div class="bar">
+                        <div id="mysql" class="mybar"></div>
+                    </div>
+                </div>
 
 			</div>
 			<div id="design" class="my-progress">
